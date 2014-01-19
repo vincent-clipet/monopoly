@@ -1,0 +1,52 @@
+<h1>Monopoly</h1>
+<h4>Vincent Clipet</h4>
+
+<br /><br />
+
+<p>
+<h2>Règles non-implémentées</h2>
+<ul>
+	<li>Le joueur ne rejoue pas s'il fait un double</li>
+	<li>La case départ rapporte 20.000 quand on s'arrête dessus, et pas quand on y passe</li>
+	<li>Le joueur reste en prison indéfiniment</li>
+	<li>Aucune gestion des cartes</li>
+</ul>
+</p>
+
+<p>
+<h2>Règles implémentées</h2>
+<ul>
+	<li>Sauvegarde et chargement des parties</li>
+</ul>
+</p>
+
+<br />
+
+<p>
+<h2>Plateau de jeu</h2>
+Le plateau de jeu est constitué de 5 parties :
+<ul>
+	<li>Le plateau de jeu, en haut à gauche. Chaque case est cliquable.</li>
+	<li>La liste des joueurs, en bas à gauche. Contient le nom des joueurs, leur argent, et la case sur laquelle ils sont. L'une des cases à gauche est toujours cochée : elle indique le joueur qui est en train de jouer.</li>
+	<li>Les dés et les contrôles, en bas au milieu. Les 2 cases contiennent les valeurs actuelles des dés. Les boutons servent respectivement à passer au tour suivant et à sauvegarder la partie.</li>
+	<li>La description de la propriété sélectionnée, en haut à droite. A chaque clic sur l'une des cases du plateau, les infos de clle-ci sont affichées dans ce cadre.</li>
+	<li>Les messages pour les joueurs, en bas à droite. Cette dernière partie sert à afficher les infos sur la partie en cours : les évènements, les déplacements, etc ...</li>
+</ul>
+
+<p>L'achat des propriétés est demandé automatiquement au joueur quand c'est possible. <br />
+Il y a également un 6ème menu qui n'apparait que lorsqu'aucune sauvegarde ne doit être chargée, et qui permet d'entrer les noms des joueurs.</p>
+
+
+<br />
+
+
+<p>
+<h2>Problèmes connus</h2>
+<ul>
+	<li>Les groupes sont sous-utilisés</li>
+	<li>La fonction <em>getOpponents()</em> n'est pas du tout utilisée, car supplantée par l'accès <em>public static</em> de la liste <em>Player.players</em></li>
+	<li>Le texte du MessagesPanel est parfois trop grand, et devient partiellement illisible
+</ul>
+</p>
+
+
